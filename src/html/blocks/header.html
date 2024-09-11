@@ -1,0 +1,119 @@
+<header class="header">
+  <div class="container header__container">
+    <div class="header__main">
+      <a class="header__main__logo" href="https://netology.ru">
+        <img class="logo" src="./img/svg/logo.svg" alt="Логотип Нетологии" />
+      </a>
+      <div class="header__main-content">
+        <div class="header__main-left">
+          <h1 class="header__main-left__title">
+            Мобильное приложение Нетологии для iOS и Android
+          </h1>
+          <p class="header__main-left__subtitle">
+            Учитесь где и когда угодно с приложением Нетологии!
+          </p>
+          <div class="buttons__links">
+            <a
+              class="button__link header__main-left__modal"
+              id="desktopLink"
+              style="display: none"
+              >Скачать приложение</a
+            >
+            <a
+              class="button__link"
+              id="iosLink"
+              href="https://redirect.appmetrica.yandex.com/serve/533252994188193869"
+              style="display: none"
+              ><img src="./img/header/appstore.svg" alt=""
+            /></a>
+            <a
+              class="button__link button__link-google"
+              id="androidLink"
+              href="https://redirect.appmetrica.yandex.com/serve/245022615587059853"
+              style="display: none"
+              ><img src="./img/header/googleplay.svg" alt=""
+            /></a>
+            <a
+              class="button__link button__link-apk"
+              id="apkLink"
+              href="https://storage.yandexcloud.net/apk-file/netology_release.apk"
+              style="display: none"
+              >Скачать APK файл</a
+            >
+          </div>
+          <div class="header__main-left__links">
+            <a
+              href="https://redirect.appmetrica.yandex.com/serve/245022615587059853"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/svg/google.svg" alt="Google Play" />
+              <span class="header--main-left__span">Google Play</span>
+            </a>
+            <a
+              href="https://apps.rustore.ru/app/ru.netology"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/svg/rustore.svg" alt="Rustore" />
+              <span class="header--main-left__span">Ru Store</span>
+            </a>
+            <a
+              href="https://redirect.appmetrica.yandex.com/serve/533252994188193869"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/svg/apple.svg" alt="Apple Store" />
+              <span class="header--main-left__span">Apple Store</span>
+            </a>
+            <a
+              href="https://storage.yandexcloud.net/apk-file/netology_release.apk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/svg/apk-file.svg" alt="Android APK" />
+              <span class="header--main-left__span">APK File</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="header__main-right">
+          <img
+            class="header__main-right__phone"
+            src="./img/header/iphone.png"
+            alt="photo"
+          />
+        </div>
+        <img
+          class="header__main-line"
+          src="./img/svg/vector-line.svg"
+          alt="photo1"
+        />
+        <img class="header__main-star" src="./img/svg/star.svg" alt="photo2" />
+        <img
+          class="header__main-asterisk"
+          src="./img/svg/asterisk.svg"
+          alt="photo3"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">
+        <img src="./img/svg/Icon/Vector.svg" alt="close" />
+      </span>
+      <h2 class="modal-title">
+        Выберите тип вашего устройства и отсканируйте QR-код
+      </h2>
+      <div class="qr-code-container" id="qrCode">
+        <img
+          class="qr-code-img"
+          src="./img/qrcode/qrcode_mobile.png"
+          alt="qrcode"
+        />
+      </div>
+    </div>
+  </div>
+</header>

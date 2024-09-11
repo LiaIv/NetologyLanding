@@ -1,0 +1,174 @@
+.swiper-main {
+  color: #000;
+  margin-bottom: 120px;
+}
+.swiper-heading {
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 28px;
+
+  @media (max-width: 480px) {
+    margin-bottom: 36px;
+  }
+
+  &__left {
+  }
+
+  &__title {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    margin-bottom: 12px;
+
+    @media (max-width: 834px) {
+      font-size: 28px;
+      line-height: 32px;
+      font-weight: 500;
+    }
+
+    span {
+      color: #4dcb9e;
+
+      @media (max-width: 480px) {
+        color: #000;
+      }
+    }
+  }
+
+  &__subtitle {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 32px;
+
+    @media (max-width: 834px) {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+  }
+
+  &__right {
+    display: flex;
+    gap: 12px;
+
+    @media (max-width: 834px) {
+      gap: 8px;
+    }
+
+    @media (max-width: 650px) {
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  display: flex;
+  position: inherit;
+  right: inherit;
+  left: inherit;
+  transition: 0.2s;
+
+  @media (max-width: 834px) {
+    width: 36px;
+    height: 36px;
+    border-radius: 6px;
+  }
+
+  svg {
+    width: 18px;
+    height: 32px;
+
+    @media (max-width: 834px) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &:hover {
+    border: 1px solid #000;
+
+    path {
+      stroke: #000;
+    }
+  }
+
+  &::after {
+    display: none;
+  }
+
+  path {
+    stroke: #8e8e8e;
+    transition: 0.2s;
+  }
+}
+
+.swiper {
+}
+.swiperFeedback {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+  background-color: #f3f4f7;
+  padding: 21px;
+  border-radius: 24px;
+  height: auto;
+
+  @media (max-width: 834px) {
+    padding: 12px 12px 21px 12px;
+    border-radius: 14px;
+  }
+
+  @media (max-width: 650px) {
+  }
+
+  &__text {
+    color: #000;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    margin-top: 10px;
+
+    @media (max-width: 834px) {
+      font-size: 14px;
+      line-height: 16.8px;
+      font-weight: 600;
+    }
+
+    @media (max-width: 650px) {
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 500;
+    }
+
+    @media (max-width: 480px) {
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 500;
+    }
+  }
+
+  &__item {
+    img {
+      border-radius: 15px;
+
+      @media (max-width: 834px) {
+        border-radius: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.none {
+  display: none !important;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+.buttons__links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: 480px) {
+    align-items: center;
+  }
+}
+
+.button__link {
+  background-color: #000;
+  padding: 19px 74px;
+  color: white;
+  max-width: 315px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+  width: 100%;
+  outline-offset: 3px;
+  transition: 0.2s ease-in-out, color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #000000cc;
+  }
+
+  @media (max-width: 1160px) {
+    padding: 0;
+  }
+
+  @media (max-width: 991px) {
+    max-width: 286px;
+  }
+
+  @media (max-width: 834px) {
+    max-width: 260px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 200px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 0;
+    max-width: 343px;
+    width: 100vw;
+  }
+
+  &-google {
+    padding: 6px 0px;
+    img {
+      @media (max-width: 834px) {
+        width: 146px;
+      }
+
+      @media (max-width: 768px) {
+        width: 100px;
+      }
+    }
+  }
+
+  &-apk {
+    padding: 15px 74px;
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+
+    @media (max-width: 991px) {
+      padding: 15px 10px;
+    }
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding: 10px 10px;
+    }
+  }
+}

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мобильное приложении Нетологии</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+  <div class="container header__container">
+    <div class="header__main">
+      <a class="header__main__logo" href="https://netology.ru">
+        <img class="logo" src="./img/svg/logo.svg" alt="Логотип Нетологии" />
+      </a>
+      <div class="header__main-content">
+        <div class="header__main-left">
+          <h1 class="header__main-left__title">
+            Мобильное приложение Нетологии для iOS и Android
+          </h1>
+          <p class="header__main-left__subtitle">
+            Учитесь где и когда угодно с приложением Нетологии!
+          </p>
+          <div class="buttons__links">
+            <a
+              class="button__link header__main-left__modal"
+              id="desktopLink"
+              style="display: none"
+              >Скачать приложение</a
+            >
+            <a
+              class="button__link"
+              id="iosLink"
+              href="https://redirect.appmetrica.yandex.com/serve/533252994188193869"
+              style="display: none"
+              ><img src="./img/header/appstore.svg" alt=""
+            /></a>
+            <a
+              class="button__link button__link-google"
+              id="androidLink"
+              href="https://redirect.appmetrica.yandex.com/serve/245022615587059853"
+              style="display: none"
+              ><img src="./img/header/googleplay.svg" alt=""
+            /></a>
+            <a
+              class="button__link button__link-apk"
+              id="apkLink"
+              href="https://storage.yandexcloud.net/apk-file/netology_release.apk"
+              style="display: none"
+              >Скачать APK файл</a
+            >
+          </div>
+          <div class="header__main-left__links">
+            <a
+              href="https://redirect.appmetrica.yandex.com/serve/245022615587059853"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/svg/google.svg" alt="Google Play" />
+              <span class="header--main-left__span">Google Play</span>
+            </a>
+            <a
+              href="https://apps.rustore.ru/app/ru.netology"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/svg/rustore.svg" alt="Rustore" />
+              <span class="header--main-left__span">Ru Store</span>
+            </a>
+            <a
+              href="https://redirect.appmetrica.yandex.com/serve/533252994188193869"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/svg/apple.svg" alt="Apple Store" />
+              <span class="header--main-left__span">Apple Store</span>
+            </a>
+            <a
+              href="https://storage.yandexcloud.net/apk-file/netology_release.apk"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="./img/svg/apk-file.svg" alt="Android APK" />
+              <span class="header--main-left__span">APK File</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="header__main-right">
+          <img
+            class="header__main-right__phone"
+            src="./img/header/iphone.png"
+            alt="photo"
+          />
+        </div>
+        <img
+          class="header__main-line"
+          src="./img/svg/vector-line.svg"
+          alt="photo1"
+        />
+        <img class="header__main-star" src="./img/svg/star.svg" alt="photo2" />
+        <img
+          class="header__main-asterisk"
+          src="./img/svg/asterisk.svg"
+          alt="photo3"
+        />
+      </div>
+    </div>
+  </div>
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">
+        <img src="./img/svg/Icon/Vector.svg" alt="close" />
+      </span>
+      <h2 class="modal-title">
+        Выберите тип вашего устройства и отсканируйте QR-код
+      </h2>
+      <div class="qr-code-container" id="qrCode">
+        <img
+          class="qr-code-img"
+          src="./img/qrcode/qrcode_mobile.png"
+          alt="qrcode"
+        />
+      </div>
+    </div>
+  </div>
+</header>
+
+    <main>
+      <section class="stats">
+  <div class="container">
+    <ul class="stats__list">
+      <li class="stats__item">
+        <h2 class="stats__number">400+</h2>
+        <p class="stats__label">Курсов</p>
+      </li>
+      <li class="stats__item">
+        <h2 class="stats__number">14</h2>
+        <p class="stats__label">Направлений</p>
+      </li>
+      <li class="stats__item">
+        <h2 class="stats__number">12</h2>
+        <p class="stats__label">Лет работы</p>
+      </li>
+      <li class="stats__item">
+        <h2 class="stats__number">4</h2>
+        <p class="stats__label">Премии</p>
+      </li>
+    </ul>
+  </div>
+</section>
+ <section class="benefits">
+  <div class="container benefits__container">
+    <div class="benefits__main">
+      <div class="benefits__item">
+        <picture class="benefits__image-container">
+          <source
+            srcset="../../img/benefits/courses-phone.png"
+            media="(max-width: 480px)"
+          />
+          <img
+            class="benefits__image"
+            src="../../img/benefits/courses.png"
+            alt="Каталог курсов"
+          />
+        </picture>
+        <div class="benefits__content">
+          <h2 class="benefits__title">Пробуйте новое без ограничений</h2>
+          <p class="benefits__description">
+            Выбирайте подходящее направление и начинайте осваивать его
+            на&nbsp;бесплатных или платных курсах
+          </p>
+        </div>
+      </div>
+      <div class="benefits__item">
+        <picture class="benefits__image-container">
+          <source
+            srcset="../../img/benefits/courses-phone.png"
+            media="(max-width: 480px)"
+          />
+          <img
+            class="benefits__image"
+            src="../../img/benefits/courses.png"
+            alt="Каталог курсов"
+          />
+        </picture>
+        <div class="benefits__content">
+          <h2 class="benefits__title">
+            Смотрите лекции и участвуйте в&nbsp;вебинарах
+          </h2>
+          <p class="benefits__description">
+            Все наши программы соответствуют требованиям работодателей
+            и&nbsp;запросам рынка
+          </p>
+        </div>
+      </div>
+      <div class="benefits__item">
+        <picture class="benefits__image-container">
+          <source
+            srcset="../../img/benefits/courses-phone.png"
+            media="(max-width: 480px)"
+          />
+          <img
+            class="benefits__image"
+            src="../../img/benefits/courses.png"
+            alt="Каталог курсов"
+          />
+        </picture>
+        <div class="benefits__content">
+          <h2 class="benefits__title">Учитесь там, где&nbsp;вам удобно</h2>
+          <p class="benefits__description">
+            Скачивайте учебные материалы и&nbsp;занимайтесь в&nbsp;любом месте
+            даже без&nbsp;интернета
+          </p>
+        </div>
+      </div>
+      <div class="benefits__item">
+        <picture class="benefits__image-container">
+          <source
+            srcset="../../img/benefits/courses-phone.png"
+            media="(max-width: 480px)"
+          />
+          <img
+            class="benefits__image"
+            src="../../img/benefits/courses.png"
+            alt="Каталог курсов"
+          />
+        </picture>
+        <div class="benefits__content">
+          <h2 class="benefits__title">Учитесь там, где вам удобно</h2>
+          <p class="benefits__description">
+            Скачивайте учебные материалы и&nbsp;занимайтесь в&nbsp;любом месте
+            даже без&nbsp;интернета
+          </p>
+        </div>
+      </div>
+      <div class="benefits__item">
+        <picture class="benefits__image-container">
+          <source
+            srcset="../../img/benefits/courses-phone.png"
+            media="(max-width: 480px)"
+          />
+          <img
+            class="benefits__image"
+            src="../../img/benefits/courses.png"
+            alt="Каталог курсов"
+          />
+        </picture>
+        <div class="benefits__content">
+          <h2 class="benefits__title">
+            Оттачивайте новые навыки на&nbsp;практике
+          </h2>
+          <p class="benefits__description">
+            Используйте тренажёры-симуляторы, проходите тесты и&nbsp;квизы для
+            быстрого усвоения материалов
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <section class="advantages">
+  <div class="container advantages__container">
+    <h2 class="advantages__heading">
+      Учитесь где и когда угодно&nbsp;с приложением Нетологии!
+    </h2>
+    <div class="advantages__main">
+      <div class="advantages__item">
+        <h3 class="advantages__title">Обучение без границ</h3>
+        <p class="advantages__subtitle">
+          Онлайн-курсы по программированию, маркетингу, аналитике, дизайну&nbspи
+          другим популярным направлениям
+        </p>
+      </div>
+      <div class="advantages__item">
+        <h3 class="advantages__title">Пробуйте разное</h3>
+        <p class="advantages__subtitle">
+          У нас нет ограничений&nbspна количество бесплатных курсов. Пробуйте
+          изучать любой курс&nbsp;и найдите свое призвание
+        </p>
+      </div>
+      <div class="advantages__item">
+        <h3 class="advantages__title">Тест на профориентацию</h3>
+        <p class="advantages__subtitle">
+          Наш тест поможет определить ваши сильные стороны&nbsp;и выбрать
+          подходящую профессию
+        </p>
+      </div>
+      <div class="advantages__item">
+        <h3 class="advantages__title">Лучшие преподаватели</h3>
+        <p class="advantages__subtitle">
+          Наши преподаватели — действующие специалисты, которые помогут&nbsp;вам
+          влиться&nbsp;в новую сферу.
+        </p>
+      </div>
+      <div class="advantages__item">
+        <h3 class="advantages__title">Практическое обучение</h3>
+        <p class="advantages__subtitle">
+          Вы получите актуальные и востребованные знания и навыки, методисты
+          сверяют программы с требованиями работодателей.
+        </p>
+      </div>
+      <div class="advantages__item">
+        <h3 class="advantages__title">Много практики</h3>
+        <p class="advantages__subtitle">
+          Задания на курсах — реальные задачи специалистов. Преподаватели,
+          выпускники&nbsp;и одногрупники помогут вам, предоставив обратную
+          связь.
+        </p>
+      </div>
+    </div>
+    <div class="buttons__links">
+      <a
+        class="button__link header__main-left__modal"
+        id="desktopLinkAdv"
+        style="display: none"
+        >Скачать приложение</a
+      >
+      <a
+        class="button__link"
+        id="iosLinkAdv"
+        href="https://apps.apple.com/app/example"
+        style="display: none"
+        ><img src="../../img/header/appstore.svg" alt=""
+      /></a>
+      <a
+        class="button__link button__link-google"
+        id="androidLinkAdv"
+        href="https://play.google.com/store/apps/details?id=example"
+        style="display: none"
+        ><img src="../../img/header/googleplay.svg" alt=""
+      /></a>
+      <a
+        class="button__link button__link-apk"
+        id="apkLinkAdv"
+        href="https://example.com/myapp.apk"
+        style="display: none"
+        >Скачать APK файл</a
+      >
+    </div>
+  </div>
+</section>
+ <section class="swiper-main">
+  <div class="container">
+    <div class="swiper-heading">
+      <div class="swiper-heading__left">
+        <h2 class="swiper-heading__title">
+          <span>12 лет</span> мы помогаем получить <br />новую специальность или
+          повышение
+        </h2>
+        <p class="swiper-heading__subtitle">
+          Посмотрите, что выпускники говорят о своих успехах
+        </p>
+      </div>
+      <div class="swiper-heading__right">
+        <div class="swiper-button-prev">
+          <svg
+            width="18"
+            height="33"
+            viewBox="0 0 18 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M17 31.1162L2 16.1162L17 1.11621"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <div class="swiper-button-next">
+          <svg
+            width="18"
+            height="33"
+            viewBox="0 0 18 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 31.1162L16 16.1162L1 1.11621"
+              stroke-width="2"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="swiper swiperFeedback">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a
+            href="https://www.youtube.com/watch?v=HKXzKdbdU4w&t=1s&ab_channel=%D0%9D%D0%B5%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F"
+            class="swiper-slide__item tube"
+          >
+            <img src="../../img/feedback/swiper1.png" alt="1" />
+          </a>
+          <div class="swiper-slide__text">
+            Из скрипача в Python-разработчика
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <a
+            href="https://www.youtube.com/watch?v=HKXzKdbdU4w&t=1s&ab_channel=%D0%9D%D0%B5%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F"
+            class="swiper-slide__item tube"
+          >
+            <img src="../../img/feedback/swiper2.png" alt="1" />
+          </a>
+          <div class="swiper-slide__text">С завода в UX/UI-дизайн</div>
+        </div>
+        <div class="swiper-slide">
+          <a
+            href="https://www.youtube.com/watch?v=HKXzKdbdU4w&t=1s&ab_channel=%D0%9D%D0%B5%D1%82%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%8F"
+            class="swiper-slide__item tube"
+          >
+            <img src="../../img/feedback/swiper3.png" alt="1" />
+          </a>
+          <div class="swiper-slide__text">Путь из авиации в BI-аналитику</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__main">
+      <a href="#" class="footer__logo">
+        <img src="../../img/svg/logo-footer.svg" alt="Нетология" />
+      </a>
+      <div class="footer__social">
+        <a
+          href="https://vk.com/netology"
+          target="_blank"
+          class="footer__social-link footer__social-link__vk"
+        >
+          <img src="../../img/svg/Icon/vk.svg" alt="VK" />
+        </a>
+        <a
+          href="https://www.youtube.com/user/netologytv"
+          target="_blank"
+          class="footer__social-link footer__social-link__youtube"
+        >
+          <img src="../../img/svg/Icon/youtube.svg" alt="YouTube"
+        /></a>
+        <a
+          href="https://tgrm.github.io/netology_ru"
+          target="_blank"
+          class="footer__social-link footer__social-link__telegram"
+        >
+          <img src="../../img/svg/Icon/telegram.svg" alt="Telegram"
+        /></a>
+        <a
+          href="https://ok.ru/netology"
+          target="_blank"
+          class="footer__social-link footer__social-link__ok"
+        >
+          <img src="../../img/svg/Icon/ok.svg" alt="OK" />
+        </a>
+        <a
+          href="https://tenchat.ru/netology"
+          target="_blank"
+          class="footer__social-link footer__social-link__tip"
+        >
+          <img src="../../img/svg/Icon/tenchat.svg" alt="Tenchat" />
+        </a>
+      </div>
+      <div class="footer__contact">
+        <a class="footer__phone" href="tel:+74951525528">+7 (495) 152-55-28</a>
+        <p class="footer__address">
+          Москва, Варшавское шоссе, д. 1, стр. 6, 1 этаж, офис 105А
+        </p>
+      </div>
+      <div class="footer__copyright">&copy; Нетология, 2011-2022</div>
+    </div>
+  </div>
+</footer>
+
+    </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
