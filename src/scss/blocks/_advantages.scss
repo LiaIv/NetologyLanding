@@ -4,7 +4,7 @@
   margin-top: 80px;
   margin-bottom: 80px;
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 80px;
 
   @media (max-width: 834px) {
     margin-top: 48px;
@@ -78,7 +78,7 @@
 
     &::before {
       content: "";
-      background: url("../../img/svg/adv-star.svg") no-repeat;
+      background: url("./../img/svg/adv-star.svg") no-repeat;
       width: 40px;
       height: 40px;
       position: absolute;

@@ -65,7 +65,7 @@
 
     &:nth-child(odd) {
       background-color: #4dcb9e;
-      background-image: url(../../img/svg/Vector-line-benef.svg);
+      background-image: url(./img/svg/Vector-line-benef.svg);
       background-repeat: no-repeat;
 
       @media (max-width: 834px) {
@@ -75,7 +75,7 @@
 
       @media (max-width: 480px) {
         background-size: 100%;
-        background-image: url(../../img/svg/vectorline-benefMobile-blue.svg);
+        background-image: url(./img/svg/vectorline-benefMobile-blue.svg);
         background-position: bottom;
       }
     }
@@ -83,7 +83,7 @@
     &:nth-child(even) {
       background-color: #84c5ef;
       flex-direction: row-reverse;
-      background-image: url(../../img/svg/vector-line-benef2.svg);
+      background-image: url(./img/svg/vector-line-benef2.svg);
       background-repeat: no-repeat;
       background-position: right;
 
@@ -94,7 +94,7 @@
 
       @media (max-width: 480px) {
         flex-direction: column-reverse;
-        background-image: url(../../img/svg/vectorline-benefMobile-green.svg);
+        background-image: url(./img/svg/vectorline-benefMobile-green.svg);
         background-size: 100%;
         background-position: bottom;
       }

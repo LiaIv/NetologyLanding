@@ -47,10 +47,6 @@
     background-color: #000000cc;
   }
 
-  @media (max-width: 1160px) {
-    padding: 0;
-  }
-
   @media (max-width: 991px) {
     max-width: 286px;
   }
@@ -72,6 +68,10 @@
   &-google {
     padding: 6px 0px;
     img {
+      @media (max-width: 1160px) {
+        padding: 0;
+      }
+
       @media (max-width: 834px) {
         width: 146px;
       }
@@ -87,6 +87,10 @@
     border: 1px solid #000;
     background-color: transparent;
     color: #000;
+
+    @media (max-width: 1160px) {
+      padding: 0;
+    }
 
     @media (max-width: 991px) {
       padding: 15px 10px;
