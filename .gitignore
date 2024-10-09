@@ -1,1 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build output
+build/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS-generated files
 .DS_Store
+
+# Webpack specific output
+/dist/
+/out/
+
+# Temporary files
+temp/
+tmp/
+
+# Gulp specific files
+.gulp/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# IDE-specific files
+.vscode/
+.idea/
